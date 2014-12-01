@@ -1,0 +1,42 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	width: 640px;
+	margin: 0 auto;
+	background-color: #4095bf;
+	color: white;
+	padding: 5px 20px;
+	font-family: Arial;
+}
+
+#redMessage {
+	background-color: #fb0c04;
+	padding: 10px;
+}
+
+#wrapper #questions-box div p {
+	font-size: 1.3em;
+}
+
+button {
+	margin-top:  20px;
+	margin-bottom: 20px;
+	background: none;
+	border: 2px solid white;
+	color: white;
+	padding: 10px 20px;
+	width: 200px;
+	font-size: 1.1em;
+}
+
+button:hover {
+	background-color: white;
+	color: #4095bf;
+}
+
+#reset-poll {
+	margin-left: 33%;
+}

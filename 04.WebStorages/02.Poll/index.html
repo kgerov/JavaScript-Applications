@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="">
+		<meta charset="utf-8">
+		<script src="JQuery/jquery-2.1.1.min.js" defer></script>
+		<script src="scripts/poll.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="styles/poll.css">
 		<title>Poll System</title>
 	</head>
 	<body>
-		
+		<div id="wrapper">
+			<h1>Poll system</h1>
+			<div id="counter-box">
+				<span id="counter">Seconds left: </span>
+			</div>
+			<div id="questions-box">
+				<div>
+					<p>1. What is the best city in Bulgaria?</p>
+					<label for="pernik">Pernik</label>
+					<input type='radio' name='best-city' value='pernik' id="pernik"/>
+					<label for="kaspichan">Kaspichan</label>
+					<input type='radio' name='best-city' value='kaspichan' id="kaspichan"/>
+					<label for="kazanlak">Kazanlak</label>
+					<input type='radio' name='best-city' value='kazanlak' id="kazanlak"/>
+					<label for="qmbol">Qmbol</label>
+					<input type='radio' name='best-city' value='qmbol' id="qmbol"/>
+				</div>
+				<div>
+				<p>2. What is your favorite Bulgarian dish?</p>
+					<label for="banica">Banica</label>
+					<input type='radio' name='best-dish' value='banica' id="banica"/>
+					<label for="boza">Boza</label>
+					<input type='radio' name='best-dish' value='boza' id="boza"/>
+					<label for="kufte">Kufte</label>
+					<input type='radio' name='best-dish' value='kufte' id="kufte"/>
+					<label for="kebapche">Kebapche</label>
+					<input type='radio' name='best-dish' value='kebapche' id="kebapche"/>
+				</div>
+				<div>
+					<p>3. What is your favorite Bulgarian dress?</p>
+					<label for="adidas">adidas Ancung</label>
+					<input type='radio' name='best-dress' value='adidas' id="adidas"/>
+					<label for="lanec">Zlaten Lanec</label>
+					<input type='radio' name='best-dress' value='lanec' id="lanec"/>
+					<label for="chasovnik">chasovnik Vodomer</label>
+					<input type='radio' name='best-dress' value='chasovnik' id="chasovnik"/>
+					<label for="obici">Srebarno obico</label>
+					<input type='radio' name='best-dress' value='obici' id="obici"/>
+				</div>
+			</div>
+			<button id="submit-poll">Submit Poll</button>
+			<button id="reset-poll">Reset Poll</button>
+			<div id="answer-box">
+				
+			</div>
+		</div>
 	</body>
 </html>
