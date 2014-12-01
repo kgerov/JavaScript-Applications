@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="urf-8">
+		<title>Message Box</title>
+		<script src="jquery-2.1.1.min.js"></script>
+		<script src="message-box.js" defer></script>
+		<script src="activate.js" defer></script>
+		<style type="text/css">
+			#wrapper {
+				width: 800px;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			#message-box {
+				width: 700px;
+				background-color: #12afed;
+				color: white;
+				padding: 40px;
+				margin: 10px auto;
+			}
+
+			.message-box-success, .message-box-error {
+				width: 300px;
+				padding: 25px;
+				font-family: Arial;
+				font: bold;
+				margin: 0 auto;
+			}
+
+			.message-box-success {
+				background-color: #2b9c7e;
+			}
+
+			.message-box-error {
+				background-color: #ff004c;
+			}
+
+			button {
+				background: none;
+				width: 200px;
+				font-weight: bold;
+				font-family: Arial;
+				font-size: 1.4em;
+				padding: 15px 25px;
+				outline: none;
+			}
+
+			#error {
+				border: 2px solid #ff004c;
+				color: #ff004c;
+			}
+
+			#success {
+				border: 2px solid #2b9c7e;
+				color: #2b9c7e;
+			}
+
+			#error:hover {
+				background-color: #ff004c;
+				color: white;
+			}
+
+			#success:hover {
+				background-color: #2b9c7e;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='wrapper'>
+			<button id="success">Success</button>
+			<button id="error">Error</button>
+			<div id="message-box"></div>
+		</div>
+	</body>
+</html>

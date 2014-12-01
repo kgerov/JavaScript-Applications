@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 640px;
+	margin: 0 auto;
+	font-weight: bold;
+	font-family: Tahoma;
+	background-color: #f62509;
+	color: #d8db24; 
+	padding: 20px;
+	font-size: 1.3em;
+}
+
+input {
+	width: 200px;
+	height: 22px;
+}
+
+#sess-counter-box, #total-counter-box {
+	display: none;
+	margin-top: 20px;
+}
+
+button {
+	background: none;
+	border: 2px solid #d8db24;
+	color: #d8db24;
+	padding: 5px 25px;
+	font-size: 0.7em;
+	font-weight: bold;
+	outline: none;
+}
+
+button:hover {
+	background-color: #d8db24;
+	color: #f62509;
+}
+
+#greetings-box {
+	display: none;
+}
+
+#clear-button {
+	float: right;
+}
+
+#clear-button:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+p {
+	margin: 0;
+}

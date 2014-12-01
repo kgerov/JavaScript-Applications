@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="">
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="change-slide.js"></script>
+		<title>Slide Show</title>
+		<style type="text/css">
+			body  {
+				margin: 0;
+				padding: 0;
+			}
+
+			#wrapper {
+				width: 800px;
+				height: 300px;
+				margin: 0 auto;
+				background-color: #fdff70;
+				position: relative;
+				font-size: 1.3em;
+				font-family: Tahoma;
+			}
+
+			.page {
+				background-color: #3c98c3;
+				padding: 10px 60px;
+				height: 300px;
+				text-align: center;
+
+			}
+
+			.page:nth-child(2), .page:nth-child(3) {
+				visibility: hidden;
+				display: none;
+			}
+
+			img {
+				width: 300px;
+			}
+
+			button img {
+				width: 30px;
+			}
+			
+			button {
+				position: absolute;
+				top: 110px;
+				background: none;
+				border: none;
+			}
+
+			#right-slide {
+				right: 10px;
+			}
+
+			#apply {
+				border: 2px solid #f70848;
+				color: #f70848;
+				font-family: Arial;
+				font-size: 1.3em;
+				font-weight: bold;
+				padding: 10px 30px;
+				position: relative;
+				top: 10px;
+			}
+
+			#apply:hover {
+				color: #3c98c3;
+				background-color: #f70848;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="page" id="page-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores cum illo exercitationem possimus quos tenetur, quisquam placeat voluptates quaerat repudiandae voluptatum numquam praesentium eligendi error, eaque, architecto dignissimos maxime nulla.</p>
+				<img src="http://images-2.drive.com.au/2013/10/18/4841397/lat11-20photos-20m-20131011133144112564-620x349.jpg" alt="">
+			</div>			
+			<div class="page" id="page-2">
+				<img src="http://www.hdwallpaperscool.com/wp-content/uploads/2014/10/bokeh-widescreen-wallpapers-in-high-definition-free-downlaod-3d-photos.jpg" alt="">
+			</div>
+			<div class="page" id="page-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat, omnis? Incidunt facilis doloribus officiis earum quisquam neque, architecto, odit dignissimos fugit labore. Ad hic porro consequuntur, eius et nesciunt.</p>
+				<button id="apply">Apply</button>
+			</div>
+			<button id="left-slide"><img src="images/left.svg" alt=""></button>
+			<button id="right-slide"><img src="images/right.svg" alt=""></button>
+		</div>
+	</body>
+</html>
