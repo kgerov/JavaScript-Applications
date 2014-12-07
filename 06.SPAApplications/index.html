@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script src='scripts/libs/JQuery/jquery-2.1.1.min.js' defer></script>
+		<script src='scripts/libs/Q/q.js' defer></script>
+		<script src='scripts/libs/handlebars-v2.0.0.js' defer></script>
+		<script src='scripts/libs/sammy-latest.min.js' defer></script>
+		<script src='scripts/requester.js' defer></script>
+		<script src='scripts/data-persister.js' defer></script>
+		<script src='scripts/view.js' defer></script>
+		<script src='scripts/controller.js' defer></script>
+		<script src='scripts/main.js' defer></script>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<title>Books</title>
+	</head>
+	<body>
+		<div id='wrapper'>
+			<div id='book-box'>
+				
+			</div>
+			
+			<input type='text' id='name' placeholder='Name'>
+			<input type='text' id='author' placeholder='Auhtor'>
+			<input type='text' id='isbn' placeholder='ISBN'>
+			<button id='create-book'>Add Book</button>
+			<div id='edit'>
+				<input type='text' id='edit-name' placeholder='Name'>
+				<input type='text' id='edit-author' placeholder='Auhtor'>
+				<input type='text' id='edit-isbn' placeholder='ISBN'>
+				<button id='submit-edit-book'>Edit Book</button>
+			</div>
+		</div>
+
+
+		<script id="book-shelf" type="text/x-handlebars-template">
+			{{#each books}}
+				<div data-bookId="{{ id }}">
+					<div>{{ title }}</div>
+					<div>{{ author }}</div>
+					<div>{{ isbn }}</div>
+					<button class="remove-book">X</button>
+					<button class="edit-book">Edit</button>
+				</div>
+			{{/each}}
+		</script>
+	</body>
+</html>

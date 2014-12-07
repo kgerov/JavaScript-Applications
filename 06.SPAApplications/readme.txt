@@ -1,0 +1,2 @@
+I have included templates and promises just to have used and tried them. I have not implemented promises for every ajax request. This current app doesn't use sammy js because
+there is just no point in using routing is such a small project. 
