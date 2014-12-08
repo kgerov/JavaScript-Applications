@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #c94736;
+	padding: 15px;
+	font-family: Arial;
+	text-align: center;
+	color: white;
+}
