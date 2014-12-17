@@ -1,0 +1,89 @@
+html, body {
+	margin: 0; 
+    padding: 0; 
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+}
+
+header ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+header ul li {
+	display: inline-block;
+	border-right: 1px solid black;
+	margin-right: 20px;
+	padding-right: 10px;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px 15px;
+	font-family: Arial;
+	font-size: 1.3em;
+}
+
+header ul li a:hover {
+	background-color: #5f2536;
+	border-radius: 2px; 
+	color: white;
+}
+
+header ul #greeting {
+	visibility: hidden;
+}
+
+header ul #logout {
+	visibility: hidden;
+}
+
+#body {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#body > div {
+	margin-top: 20px;
+}
+
+#bookmark-box {
+	text-align: left;
+}
+
+#bookmark-box ul{
+	list-style-type: none;
+}
+
+#bookmark-box ul li {
+	display: inline-block;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	border-right: 1px solid black;
+}
+
+#bookmark-box ul li button {
+	font-size: 15px;
+	width: 25px;
+	margin-left: 5px;
+}
+
+input{
+	width: 200px;
+	height: 23px;
+	font-size: 20px;
+}
+
+button{
+	width: 90px;
+	font-size: 20px;
+}
